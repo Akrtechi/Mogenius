@@ -24,7 +24,7 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('➕ ADD ME TO GROUP ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                   ],[
-                    InlineKeyboardButton('⚒ MY OWNER', url='https://t.me/joinchat/Cl6Byc2RvPlkODA1), 
+                    InlineKeyboardButton('⚒ MY OWNER', url='https://t.me/joinchat/Cl6Byc2RvPlkODA1'), 
                     InlineKeyboardButton('⚙ ABOUT', url=f"https://t.me/{temp.U_NAME}")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
