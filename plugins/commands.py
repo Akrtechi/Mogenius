@@ -22,10 +22,10 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                    InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('➕ ADD ME TO GROUP ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                   ],[
-                    InlineKeyboardButton('💿SUᎮᎮԾᏒϮ💿', url=GRP_LNK), 
-                    InlineKeyboardButton('🤠ΛBOUT🤠', url=f"https://t.me/{temp.U_NAME}")
+                    InlineKeyboardButton('⚒ MY OWNER', url=https://t.me/joinchat/Cl6Byc2RvPlkODA1), 
+                    InlineKeyboardButton('⚙ ABOUT', url=f"https://t.me/{temp.U_NAME}")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
@@ -43,10 +43,10 @@ async def start(client, message):
                     InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                  ],[
                     InlineKeyboardButton('🦋SΞΛᏒCH🦋', switch_inline_query_current_chat=''), 
-                    InlineKeyboardButton('🦋SUᎮᎮԾᏒϮ🦋', url=GRP_LNK)
+                    InlineKeyboardButton('⚒ MY OWNER', url=https://t.me/joinchat/Cl6Byc2RvPlkODA1)
                  ],[
-                    InlineKeyboardButton('♻️𝐇𝐞𝐥𝐩♻️', callback_data='help'),
-                    InlineKeyboardButton('♻️𝐀𝐛𝐨𝐮𝐭♻️', callback_data='about')
+                    InlineKeyboardButton('⚠️ HELP', callback_data='help'),
+                    InlineKeyboardButton('⚙ ABOUT', callback_data='about')
                    ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await message.reply_sticker("CAACAgUAAxkBAAEGmBRjhOg5skcH7YlJUtTzT9hG-3e1-AAC-AMAAp9EiVed3ajGmwsl5isE") 
