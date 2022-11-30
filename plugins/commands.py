@@ -24,7 +24,7 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('➕ ADD ME TO GROUP ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                   ],[
-                    InlineKeyboardButton('⚒ MY OWNER', url='https://t.me/joinchat/Cl6Byc2RvPlkODA1'), 
+                    InlineKeyboardButton('⚒ MY OWNER', url='https://t.me/joinchat/Cl6Byc2RvPlkODA1')
                     InlineKeyboardButton('⚙ ABOUT', url=f"https://t.me/{temp.U_NAME}")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -40,10 +40,10 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('➕ ADD ME TO GROUP ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                  ],[
-                    InlineKeyboardButton('🦋SΞΛᏒCH🦋', switch_inline_query_current_chat=''), 
-                    InlineKeyboardButton('⚒ MY OWNER', url=https://t.me/joinchat/Cl6Byc2RvPlkODA1)
+                    InlineKeyboardButton('🔍 SEARCH', switch_inline_query_current_chat=''), 
+                    InlineKeyboardButton('⚒ MY OWNER', url='https://t.me/joinchat/Cl6Byc2RvPlkODA1')
                  ],[
                     InlineKeyboardButton('⚠️ HELP', callback_data='help'),
                     InlineKeyboardButton('⚙ ABOUT', callback_data='about')
@@ -89,13 +89,13 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                    InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('➕ ADD ME TO GROUP ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                  ],[
-                    InlineKeyboardButton('🦋SΞΛᏒCH🦋', switch_inline_query_current_chat=''), 
-                    InlineKeyboardButton('🦋SUᎮᎮԾᏒϮ🦋', url=GRP_LNK)
+                    InlineKeyboardButton('🔍 SEARCH', switch_inline_query_current_chat=''), 
+                    InlineKeyboardButton('⚒ MY OWNER', url='https://t.me/joinchat/Cl6Byc2RvPlkODA1')
                  ],[
-                    InlineKeyboardButton('♻️𝐇𝐞𝐥𝐩♻️', callback_data='help'),
-                    InlineKeyboardButton('♻️𝐀𝐛𝐨𝐮𝐭♻️', callback_data='about')
+                    InlineKeyboardButton('⚠️ HELP', callback_data='help'),
+                    InlineKeyboardButton('⚙ ABOUT', callback_data='about')
                    ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await message.reply_sticker("CAACAgUAAxkBAAEGmBRjhOg5skcH7YlJUtTzT9hG-3e1-AAC-AMAAp9EiVed3ajGmwsl5isE") 
